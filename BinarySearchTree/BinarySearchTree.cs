@@ -17,7 +17,11 @@ namespace BinarySearchTree
         }
 
         int leftCount = 0, rightCount = 0;
-        bool result = false;
+       
+        /// <summary>
+        /// Insert Node to Binary Search Tree
+        /// </summary>
+        /// <param name="item">Node of tree</param>
         public void Insert(T item)
         {
             T currentNodeValue = this.NodeData;
@@ -37,6 +41,17 @@ namespace BinarySearchTree
             }
         }
 
+        /// <summary>
+        /// Get size of Binary Search Tree
+        /// </summary>
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
+        }
+
+        /// <summary>
+        /// Display Binary Search Tree
+        /// </summary>
         public void Display()
         {
             if (this.LeftTree != null)
